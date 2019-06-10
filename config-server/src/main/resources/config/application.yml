@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/winfred958/springframework-cloud/tree/master/config-repository/{profile}/{application}
+          uri: https://github.com/winfred958/springframework-cloud/config-repository/{profile}/{application}
         default-label: master
 
