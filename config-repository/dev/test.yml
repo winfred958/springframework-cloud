@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev,test,v-product,product
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://xxxx/{profile}/{application}
+        default-label: master
+
