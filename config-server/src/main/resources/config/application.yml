@@ -1,10 +1,26 @@
 spring:
   profiles:
-    active: dev,test,v-product,product
+    active: local,dev,test,v-product,product
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/winfred958/springframework-cloud/config-repository/{profile}/{application}
         default-label: master
-
+        git:
+          uri: https://github.com/winfred958/springframework-cloud.git
+          repos:
+            local:
+              pattern: "*/local*"
+              uri: https://github.com/winfred958/springframework-cloud.git
+              searchPaths: config-repository/local
+            dev:
+              pattern: "*/dev*"
+              uri: https://github.com/winfred958/springframework-cloud.git
+              searchPaths: config-repository/dev
+            test:
+              pattern: "*/test*"
+              uri: https://github.com/winfred958/springframework-cloud.git
+              searchPaths: config-repository/test
+            v-product:
+              pattern: "*/v-product*"
+              uri: https://github.com/winfred958/springframework-cloud.git
+              searchPaths: config-repository/v-product
