@@ -1,0 +1,5 @@
+#server:
+#  ssl:
+#    key-alias: spring
+#    enabled: true
+#    key-password: 123456
