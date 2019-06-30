@@ -10,7 +10,7 @@ spring:
   application:
     name: gateway-server
   cloud:
-    gateway:
+    gateway:s
       enabled: true
       discovery:
         locator:
