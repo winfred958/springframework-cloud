@@ -9,7 +9,7 @@
         <artifactId>springframework-cloud</artifactId>
         <version>1.0.1</version>
     </parent>
-    <artifactId>regist-and-discovery-service</artifactId>
+    <artifactId>discovery-server</artifactId>
     <version>1.0.1</version>
 
     <dependencies>
